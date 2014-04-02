@@ -1,8 +1,67 @@
 * {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   	font-weight: 300;
 }
 
-body {
-	background-color: #d3c172;
+
+.levelField {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+
+	background-color: #d3cba3;
+}
+
+.lf0 {
+	top: 20px;
+	left: 20px;
+}
+
+.lf1 {
+	top: 20px;
+	left: 140px;
+}
+
+.lf2 {
+	top: 20px;
+	left: 260px;
+}
+
+.lf3 {
+	top: 140px;
+	left: 20px;
+}
+
+.lf4 {
+	top: 140px;
+	left: 140px;
+}
+
+.lf5 {
+	top: 140px;
+	left: 260px;	
+}
+
+.lf6 {
+	top: 260px;
+	left: 20px;
+}
+
+.lf7 {
+	top: 260px;
+	left: 140px;
+}
+
+.lf8 {
+	top: 260px;
+	left: 260px;
+}
+
+.level {
+	position: absolute;
+	height: 280px;
+	width: 280px;
+
+	left: 50%;
+	margin-left: -140px;
+	top: 50px;
 }
