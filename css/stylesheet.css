@@ -2,13 +2,19 @@
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
+h1 {
+	text-align: center;
+}
+
 
 .levelField {
 	position: absolute;
 	height: 100px;
 	width: 100px;
 
-	background-color: #d3cba3;
+	background-color: #a4a4a4;
+
+	transition: 0.2s background-color;
 }
 
 .lf0 {
@@ -58,10 +64,40 @@
 
 .level {
 	position: absolute;
-	height: 280px;
-	width: 280px;
+	height: 380px;
+	width: 380px;
 
 	left: 50%;
-	margin-left: -140px;
-	top: 50px;
+	margin-left: -190px;
+	top: 80px;
+
+	background-color: rgba(215, 215, 215, 0.5);
+	border-radius: 5px;
+}
+
+
+
+.victoryDisplay {
+	position: absolute;
+	height: 50px;
+	width: 380px;
+
+	top: 450px;
+	left: 50%;
+
+	margin-left: -190px
+}
+
+.blueVictory {
+	color: #3ce6c2;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 50px;
+}
+
+.redVictory {
+	color: #e0002e;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 50px;
 }
