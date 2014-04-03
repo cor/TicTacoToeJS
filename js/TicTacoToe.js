@@ -94,6 +94,13 @@ $(document).ready(function(){
 			} 
 		});
 
+		$( ".lf0" ).click(function() {
+			if (gameRunning) {
+			setLevelField(0, currentTurn);
+			updateLevel();
+			} 
+		});
+
 
 		$( ".lf1" ).click(function() {
 			if (gameRunning) {
