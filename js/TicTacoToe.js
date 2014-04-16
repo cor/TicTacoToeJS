@@ -3,15 +3,11 @@ var currentTurn = 1;
 var gameRunning = true;
 var gameWinner = 0;
 
-/**
- * Clear the level
- */
 function clearLevel () {
 	for (var i = level.length - 1; i >= 0; i--) {
 		level[i] = 0;
 	}
 }
-
 
 function checkForVictory (playerToCheck) {
 	//horizontal
@@ -27,6 +23,13 @@ function checkForVictory (playerToCheck) {
 	if (level[2] == playerToCheck && level[4] == playerToCheck && level[6] == playerToCheck) return true;
 	//none
 	return false;
+}
+
+function aiTurn () {
+
+	for (var i = level.length - 1; i >= 0; i--) {
+		level[i]
+	};
 }
 
 function setLevelField(levelField, value) {
@@ -65,7 +68,6 @@ function updateLevel () {
 	}
 }
 
-
 function changeTurn () {
 	if (currentTurn == 1) {
 		currentTurn = 2;
@@ -79,7 +81,6 @@ function changeTurn () {
 
 function showVictory () {
 	if(gameWinner == 1 ) $(".victoryDisplay").html('<p class="blueVictory">Blue has won!</p>')
-
 	if(gameWinner == 2 ) $(".victoryDisplay").html('<p class="redVictory">Red has won!</p>')
 }
 
