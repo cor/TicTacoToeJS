@@ -1,9 +1,9 @@
 TicTacoToeJS
 ============
 
-A port of my TicTacoToe project in JavaScript,
+A Javascript version of my TicTacoToe game.
 
-TicTacoToeJS is a local multiplayer tic tac toe game.
-It is entirely client side and made usign simple js and jquery.
+[The original TicTacoToe game](https://github.com/CorPruijs/TicTacoToe) is a simple Tic Tac Toe game written in Java that uses the console.
 
-Play it at cor.pruys.com/TicTacoToe
+This is pretty much the same game, except that it looks a lot better.
+It's entirely client side, made using simple JS and jQuery
