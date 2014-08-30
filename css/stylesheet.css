@@ -113,8 +113,13 @@ a { color : #3ce6c2;}
 
 .websitelogo {
 	position: absolute;
-	top: 320px;
-	left: -8px;
+    left: 15px;
+    bottom: 15px;
+}
+
+.websitelogo img {
+    width: 100px;
+
 }
 
 .gameTitle > h1 {
