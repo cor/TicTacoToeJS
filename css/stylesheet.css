@@ -17,50 +17,17 @@ h1 {
 	transition: 0.2s background-color;
 }
 
-.lf0 {
-	top: 20px;
-	left: 20px;
-}
+.lf0 { top: 20px; left: 20px; }
+.lf1 { top: 20px; left: 140px; }
+.lf2 { top: 20px; left: 260px; }
 
-.lf1 {
-	top: 20px;
-	left: 140px;
-}
+.lf3 { top: 140px; left: 20px; }
+.lf4 { top: 140px; left: 140px; }
+.lf5 { top: 140px; left: 260px;	}
 
-.lf2 {
-	top: 20px;
-	left: 260px;
-}
-
-.lf3 {
-	top: 140px;
-	left: 20px;
-}
-
-.lf4 {
-	top: 140px;
-	left: 140px;
-}
-
-.lf5 {
-	top: 140px;
-	left: 260px;	
-}
-
-.lf6 {
-	top: 260px;
-	left: 20px;
-}
-
-.lf7 {
-	top: 260px;
-	left: 140px;
-}
-
-.lf8 {
-	top: 260px;
-	left: 260px;
-}
+.lf6 { top: 260px; left: 20px; }
+.lf7 { top: 260px; left: 140px; }
+.lf8 { top: 260px; left: 260px; }
 
 .gameContainer {
 	position: absolute;
