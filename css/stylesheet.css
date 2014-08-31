@@ -6,6 +6,33 @@ h1 {
 	text-align: center;
 }
 
+.gameContainer {
+    height: 490px;
+    width: 540px;
+
+    position: absolute;
+    left: 50%;
+    top: 50px;
+
+
+
+    margin-left: -270px;
+
+}
+
+
+/* the level itself */
+.level {
+    position: absolute;
+    height: 380px;
+    width: 380px;
+
+    top: 110px;
+
+    background-color: rgba(215, 215, 215, 0.5);
+    border-radius: 10px;
+}
+
 
 .levelField {
 	position: absolute;
@@ -17,29 +44,20 @@ h1 {
 	transition: 0.2s background-color;
 }
 
+/* positioning of level fields */
+
+/* top row */
 .lf0 { top: 20px; left: 20px; }
 .lf1 { top: 20px; left: 140px; }
 .lf2 { top: 20px; left: 260px; }
-
+/* middle row */
 .lf3 { top: 140px; left: 20px; }
 .lf4 { top: 140px; left: 140px; }
 .lf5 { top: 140px; left: 260px;	}
-
+/* bottom row */
 .lf6 { top: 260px; left: 20px; }
 .lf7 { top: 260px; left: 140px; }
 .lf8 { top: 260px; left: 260px; }
-
-.gameContainer {
-	position: absolute;
-	height: 490px;
-	width: 540px;
-
-	/*game position*/
-	left: 50%;
-	margin-left: -270px;
-
-	top: 50px;
-}
 
 .gameTitle {
 	position: absolute;
@@ -50,17 +68,9 @@ h1 {
 	border-radius: 10px;
 
 }
-.level {
-	position: absolute;
-	height: 380px;
-	width: 380px;
 
-	top: 110px;
 
-	background-color: rgba(215, 215, 215, 0.5);
-	border-radius: 10px;
-}
-
+/* information section */
 .info {
 	position: absolute;
 	height: 380px;
@@ -93,6 +103,8 @@ a { color : #3ce6c2;}
 	color: #e0002e;
 }
 
+
+/* text shown at victory */
 .victoryDisplay {
 	position: absolute;
 	height: 50px;
