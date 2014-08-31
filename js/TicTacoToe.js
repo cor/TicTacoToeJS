@@ -1,5 +1,7 @@
+var WINNING_MOVES = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+
 var level = new Array(9);
-var winningMoves = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+
 var currentTurn = 1;
 var gameRunning = true;
 var gameWinner = 0;
@@ -7,7 +9,8 @@ var gameWinner = 0;
 $(document).ready(function(){
 	clearLevel();
 	updateLevel();
-		
+
+        // do stuff on click
 		$( ".lf0" ).click(function() {if (gameRunning) setLevelField(0, currentTurn); else resetGame(); });
 		$( ".lf1" ).click(function() {if (gameRunning) setLevelField(1, currentTurn); else resetGame(); });
 		$( ".lf2" ).click(function() {if (gameRunning) setLevelField(2, currentTurn); else resetGame(); });
@@ -22,12 +25,15 @@ $(document).ready(function(){
 	});
 
 function updateLevel () {
+
+    // update background colors to represent the level array
 	for (var i = level.length - 1; i >= 0; i--) {
 		if (level[i] === 0) $(".lf" + i).css("background-color", "#a4a4a4");
 		else if (level[i] == 1) $(".lf" + i).css("background-color", "#3ce6c2"); 
 		else if (level[i] == 2) $(".lf" + i).css("background-color", "#e0002e");
 	}
 
+    // check if the game is a tie, player 1 won or player 2 won and handle accordingly
 	if (gameIsTie()) {
 		gameRunning = false;
 		gameWinner = 4;
@@ -86,8 +92,8 @@ function updateLevel () {
 }
 
 function checkForVictory (playerToCheck) {
-	for (var i = winningMoves.length - 1; i >= 0; i--) {
-		if (level[winningMoves[i][0]] == playerToCheck && level[winningMoves[i][1]] == playerToCheck && level[winningMoves[i][2]] == playerToCheck ) return true;
+	for (var i = WINNING_MOVES.length - 1; i >= 0; i--) {
+		if (level[WINNING_MOVES[i][0]] == playerToCheck && level[WINNING_MOVES[i][1]] == playerToCheck && level[WINNING_MOVES[i][2]] == playerToCheck ) return true;
 	}
 	return false;
 }
