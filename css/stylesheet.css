@@ -86,13 +86,10 @@ h1 {
 
 a { color : #3ce6c2;}
 
-.websitelogo {
+#websitelogo {
 	position: absolute;
     left: 15px;
     bottom: 15px;
-}
-
-.websitelogo img {
     width: 100px;
 }
 
